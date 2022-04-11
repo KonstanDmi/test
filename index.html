@@ -7,72 +7,91 @@
     <meta name="keywords" content="html, course, css, tags,">
     <meta name="description" content='основы хтмл цсс пробы пера'>
     <title>Test run</title>
+    <link rel="stylesheet" href="for_index.css">
 </head>
 <body>
+    <div class="container">
+        <div class="info">
+           
+            <img src="for page.jpg"  alt="а шо стало?" class="avatar">
+              
+        <div class="hat">
+            <div class="info-text">
+                <h1>Константин  Дмитров</h1>
+                <p>Я <strong>4 года</strong> работал<em> барменом</em> и немножко <em>устал</em></p>
 
-    <img src="https://sun9-43.userapi.com/impf/QOTR7vd2SzEnXRzQMFizPc0LQEpe1emLJ0k2Wg/W1gjeiCwiRQ.jpg?size=1200x800&quality=96&sign=71329471c854c7f7759b5fb40624989f&type=album" width=280 alt="а шо стало?">
+                <p>теперь учу JavaScript, что бы работать <strong><em>програмистом</em></strong></p>
+            </div>
 
-    <h1>KonStantin Dmitrov</h1>
+                <p><strong> Cоцсети:</strong></p>
 
-    <p>Я <strong>4 года</strong> работал<em> барменом</em> и немножко <em>устал</em></p>
+                <a href="https://vk.com/kyle12345" target="_blank" >VK</a> | 
+                <a href="https://www.twitch.tv/spium" target="_blank" >Twitch</a> |
+                <a href="https://t.me/kylebr" target="_blank" >Telegram</a> 
+        </div> 
 
-    <p>теперь учу JavaScript, что бы работать <strong><em>програмистом</em></strong></p>
+        </div> 
+            <div class="card1">
+                <h3>Мои увлечения</h3>
 
-    <p><strong> соцсети есть, но немного:</strong></p>
+                <ol class="list">
+                    <li>фентези и sci-fi книги</li>
+                    <li>кофе, люблю готовить и пить кофе </li>
+                    <li>учу языки</li>
+                </ol>
+            </div>
+        <div class="card2">
+            <h3>Предыдущие места работы</h3>
 
-    <a href="https://vk.com/kyle12345" target="_blank">VK</a> <a href="https://www.twitch.tv/spium" target="_blank">Twitch</a>
+            <table class="table">
+                <!-- <thead>
+                    <tr>
+                        <th>предприятие</th>
+                        <th>должность</th>
+                        <th>потраченное время</th>
+                    </tr>
+                </thead> -->
 
-    <h3>мои увлечения</h3>
+                <tbody>
+                    <tr>
+                        <td>Краснодарская филармония <br> им. Пономаренко</td>
+                        <td>монтировщик сцены</td>
+                        <td>2014-2017</td>
+                    </tr>
+                    <tr>
+                        <td>Сеть ресторанов <br> "ПитьКофе"</td>
+                        <td>бармен</td>
+                        <td>2018-2022</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
-    <ol>
-        <li>фентези и sci-fi книги</li>
-        <li>кофе, да, люблю готовить и пить кофе </li>
-        <li>учу языки</li>
-    </ol>
+        <form action="/" class="form">
+            <h2>Связь со мной</h2>
+            
+            <div class="form-row">
 
-    <h3>предыдущие места работы</h3>
+                <div class="form-group">
+                    <label for="text2">Ваше имя</label>
+                    <input type="text" id="text2" placeholder="Введите имя">
+                </div>
 
-    <table>
-        <thead>
-            <tr>
-                <th>предприятие</th>
-                <th>должность</th>
-                <th>потраченное время</th>
-            </tr>
-        </thead>
+                <div class="form-group">
+                    <label for="email">Ваш Email</label>
+                    <input type="email" id="email" placeholder="Введите Email">
+                </div>
 
-        <tbody>
-            <tr>
-                <td>краснодарская филармония <br> имени Пономаренко</td>
-                <td>монтировщик сцены</td>
-                <td>2014-2017</td>
-            </tr>
-            <tr>
-                <td>сеть ресторанов <br> "ПитьКофе"</td>
-                <td>бармен</td>
-                <td>2018-2022</td>
-            </tr>
-        </tbody>
-    </table>
+            </div>
 
-    <h3>Связь со мной</h3>
+            
+            <div class="form-group">
+                <label for="message">Ваше сообщение</label>
+                <textarea name="" id="message" cols="25" rows="5" placeholder="Ваше сообщение..."></textarea>
+            </div>
 
-    <div>
-        <label for="text2">Ваше имя</label>
-        <input type="text" id="text2" placeholder="Введите имя">
-    </div>
-
-    <div>
-        <label for="email">Ваш Email</label>
-        <input type="email" id="email" placeholder="Введите Email">
-    </div>
-
-    <div>
-        <label for="message">Ваше сообщение</label>
-        <br>
-        <textarea name="" id="message" cols="25" rows="5" placeholder="Ваше сообщение..."></textarea>
-    </div>
-
-    <button type="submit">Отправить</button>
+            <button type="submit" class="btn">Отправить</button>
+        </form>
+    </div>    
 </body>
 </html>
